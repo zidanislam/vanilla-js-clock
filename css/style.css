@@ -1,0 +1,32 @@
+html{
+    background: url('https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    text-align: center;
+}
+
+.clock-body{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    padding: 1rem;
+}
+.clock{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand{
+    width: 18%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top:50%;
+    /* transition: all 0.05s; */
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(.1, 2.7, 0.58, 1);
+}
